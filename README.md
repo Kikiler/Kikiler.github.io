@@ -17,3 +17,4 @@ We can organize it this way :
         since it's our first participation this section won't be created
     - telemetry :
         will be built in later stages
+

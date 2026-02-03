@@ -1,79 +1,30 @@
 .mainPageTitle {
-    text-align: center;
     color: aliceblue;
-}
-
-.titleContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.aboutUs {
-    color: rgb(38, 133, 200);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2); /* obligatoire */
+    display: inline-block;
 }
 
 body {
-background-color: lightskyblue;
-background-attachment: scroll;
-background-image: url(resources/Façade_de_l\'ECAM.jpeg);
-}
-
-.menuButton {
-    background-color: transparent;
-    border: none;
-    margin: 0px;
-    transition: box-shadow 0.15s, background-color 1s, opacity 0.15s;
-}
-
-.menuButtonHidden {
-    background-color: transparent;
-    border: none;
-    margin: 0px;
-    display: none;
-    transition: box-shadow 0.15s, background-color 1s, opacity 0.15s;
-}
-
-.menuButton:hover {
-    opacity: 0.8;
-}
-.menuButtonContainer {
-    display: inline-block;
-}
-.blankLine_long {
+    background-attachment: scroll;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(181, 213, 222, 0.6)), url("resources/MG_0057-e1585312481782.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     color: white;
-    width: 55px;
-    height: 7px;
-    border-radius: 30%;
-    background-color: white;
-    display: inline-block;
-    margin: 0px;
 
 }
 
-.blankLine_little {
-    color: #ffffff;
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    background-color: white;
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.logoEcam {
+    width: 10%;
+    border-radius: 30%;
+    transition: 1.5s;
+}
+.logoEcam:hover {
+    opacity: 0.6;
 }
 
 .sectionListContainer {
-    display: inline-block;
-}
-
-.sectionListContainerHidden {
-    display: none;
-
-}
-.sectionList {
-    color: transparent;
+    position: absolute;
+    top: 5%;
+    left: 55%;
 }
 
 .sectionEl {
@@ -81,28 +32,23 @@ background-image: url(resources/Façade_de_l\'ECAM.jpeg);
     border: none;
     color: white;
     font-weight: bold;
-}
-.sectionEl:hover {
-    opacity: 0.8;
-}
-
-.blankLine_menu {
-    color: white;
-    width: 35px;
-    height: 5px;
-    border-radius: 30%;
-    background-color: white;
-    display: inline-block;
-    margin: 0px;
-    margin-bottom: 10px;
+    margin-right: 25px;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
+    transition: 1.5s;
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+    text-decoration: underline;
+
+}
+
+nav a:hover {
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.4;
 }
