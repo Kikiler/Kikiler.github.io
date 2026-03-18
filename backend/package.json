@@ -1,0 +1,19 @@
+{
+  "name": "iesc_website",
+  "version": "1.0.0",
+  "description": "website for ecam solar endurance team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kikiler/IESC_Website.git"
+  },
+  "author": "Killian Evouna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kikiler/IESC_Website/issues"
+  },
+  "homepage": "https://github.com/Kikiler/IESC_Website#readme"
+}
