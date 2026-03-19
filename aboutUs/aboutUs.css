@@ -3,6 +3,18 @@ form {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(66, 195, 231, 0.6));
 }
 
+main {
+    padding: 30px;
+}
+
+h2 {
+ text-align: center;
+}
+
+p {
+    padding: 30px;
+}
+
 .textInput {
     background-color: rgba(66, 195, 231, 0.4);
     border-color: rgba(255, 255, 255, 0.7);
