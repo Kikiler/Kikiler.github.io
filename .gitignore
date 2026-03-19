@@ -1,3 +1,4 @@
 *.txt
 /resources
-.env
+.env*
+node_modules/
