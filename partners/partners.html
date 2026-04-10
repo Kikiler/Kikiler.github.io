@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="partners.css">
 <html lang="en">
 
 <head>
@@ -33,7 +34,37 @@
         </div>
     </header>
     <main>
-        
+        <h1> Partners & Sponsors</h1>
+        <p>
+            We are very grateful to all the companies that are partnering with us 
+            because this project wouldn't be possible without their technical and financial supports.
+            We regularly have meeting to keep them tuned about the latest progress and 
+            how their technical or financial support has contributed to them. We are always open to new 
+            collaborations so don't hesitate to contact us.
+        </p>
+                <form action="">
+            <fieldset>
+                <legend>Contact information</legend>
+                <div id="organisationName">
+                    <label for="Name of the organisation"> Organisation/Company name: </label>
+                    <input type="text" placeholder="Name of your organisation" class="textInput">
+                </div>
+                <div>
+                    <label for="email"> Email adress: </label>
+                    <input type="email" placeholder="your email" class="textInput" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend> your message</legend>
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" class="textInput" cols="30" rows="10" placeholder="type your message here"
+                        required></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submitButton">Send</button>
+        </form>
     </main>
 
     <footer>
