@@ -18,17 +18,19 @@ body {
 main {
     color: white;
     background : rgb(18, 79, 135);
-    margin: 0px;   
+    margin: 0px;  
 }
 
 header {
     background: linear-gradient(to top, rgba(35, 97, 155, 1), rgba(35, 97, 155, 0.6));
     display: flex;
-    min-height: 60px;
+    height: 30%;
     align-items: center;
     justify-content: space-between;
     color: white;
     padding-right: 15px;
+    font-size: clamp(1vw, 2vw, 3vw);
+    gap: 30px;
 }
 
 footer {
@@ -69,15 +71,19 @@ footer div {
 .logoESCLink {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 7%;
+    min-width: 30px;
 }
 
 .logoESC {
-    width: 25%;
+    width: 100%;
+    min-height: 30px;
     transition: 1.5s;
     margin: 0;
     border: none;
     display: block;
-    min-height: 100%;
+    aspect-ratio: 1/1;
 }
 
 .logoESC:hover {
@@ -95,12 +101,10 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    max-width: 100%;
 }
 
 nav a {
     color: white;
-    font-weight: bold;
 }
 
 nav a:hover {
