@@ -1,0 +1,172 @@
+/* ============ HERO PHOTO (about page) ============ */
+.hero-photo {
+  margin: 0 0 56px 0;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+.hero-photo figcaption {
+  padding: 14px 20px;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  letter-spacing: 0.02em;
+}
+
+/* ============ ABOUT SECTION ============ */
+.about {
+  position: relative;
+  z-index: 1;
+  padding: 120px 24px;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.3));
+}
+
+.about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  background: var(--surface);
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 720px;
+  background: linear-gradient(180deg, #ffffff, rgba(255,255,255,0.65));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 48px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 48px;
+  }
+}
+
+.about-text p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.about-text p strong { color: var(--text); font-weight: 600; }
+.about-text p em { color: var(--text); font-style: italic; }
+
+.signoff {
+  margin-top: 32px !important;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-style: italic;
+  color: var(--text) !important;
+}
+
+.team-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 24px;
+}
+
+.team-card h4 {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.team-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.team-list li:last-child { border-bottom: none; }
+
+.team-list .role {
+  color: var(--muted);
+  font-size: 12px;
+}
+.team-list .name {
+  color: var(--text);
+  font-weight: 500;
+  text-align: right;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.stat-num {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Tweak hero to feel like a landing, not a full-screen takeover, since there's now content below */
+.container { padding-top: 80px; padding-bottom: 80px; min-height: 90vh; }

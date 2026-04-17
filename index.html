@@ -1,88 +1,78 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="index.css">
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECAM Solar Endurance Team</title>
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> ECAM Solar Endurance Team — ESET </title>
+  <meta name="description"
+    content="Apex Student Racing — a high school race team built from scratch by students with a wrench, a dream, and a lot of duct tape." />
+  <meta name="author" content="Apex Student Racing" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-    <header>
-        <a href="" class="logoESCLink"><img src="resources/ESC.png" alt="logoESC" class="logoESC"></a>
-        <span class="teamName">
-            ECAM Solar Endurance Team
-        </span>
-        <div id="sectionOverview">
-            <nav>
-                <a href="aboutUs/aboutUs.html">
-                    About us
-                </a>
-                <a href="partners/partners.html">
-                    Partners & Sponsors
-                </a>
-                <a href="pastProjects/pastProject.html">
-                    Overview of past projects
-                </a>
-                <a href="telemetry/telemtry.html">
-                    Telemetry
-                </a>
-            </nav>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <main>
+    <div id="root" style="display:none"></div>
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div class="grid-bg"></div>
+
+    <nav class="nav">
+      <a href="/" class="nav-brand"> ESET <span>/ Student Racing</span></a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/sponsors/sponsors.html">Sponsors</a></li>
+        <li><a href="/join/join.html">Join</a></li>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <div class="badge">
+        <span class="dot"></span>
+        Season 01 — Now Recruiting
+      </div>
+
+      <h1>Born in a school garage.<br />Built to win on Sunday.</h1>
+
+      <p class="lead">
+        ECAM Solar Endurance Team (ESET) is a brand-new race team founded by students & teachers at
+        ECAM Brussels.
+      </p>
+
+      <div class="actions">
+        <button class="btn-primary" id="joinTeam">
+          Join the Team <span class="arrow">→</span>
+        </button>
+        <a href="about.html" class="btn-secondary">Read our story</a>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <h3>Built by students & teachers </h3>
+          <p>Every bolt turned by us</p>
         </div>
-    </header>
-    <main>
-        <img src="/resources/facadeEcam.png" alt="façadeEcam" class="imgEcam">
-
-        <blockquote>
-            Dreaming of innovation yesterday, fostering innovation tommorow
-            <hr>
-        </blockquote>
-
-        <p>
-            We are a group of motivated students based in ECAM Brussels Engineering School who are building an electrical 
-            car to participate for the Ilumen European Solar Chalenge in 2028. 
-        </p>
-                    <form action="">
-            <fieldset>
-                <legend>Contact information</legend>
-                <div id="organisationName">
-                    <label for="orgName"> Organisation/Company name: </label>
-                    <input id= "orgName" type="text" placeholder="Name of your organisation" class="textInput">
-                </div>
-                <div>
-                    <label for="useremail"> Email adress: </label>
-                    <input id="useremail" type="email" placeholder="your email" class="textInput" required>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend> your message</legend>
-                <div>
-                    <label for="message"></label>
-                    <textarea id="message" name="message" class="textInput" cols="30" rows="10" placeholder="type your message here"
-                        required></textarea>
-                </div>
-            </fieldset>
-
-            <button type="submit" id="submitButton">Send</button>
-        </form>
-
-    </main>
-
-    <footer>
-        <div >
-            <span> Promenade de l'alma 50, 1200 Woluwe Saint-Lambert</span>
-            <span>infoESET@ecam.be</span>
-            <span> +32 0478 45 67 03</span>
-            <span> <a href="/aboutUs/aboutUs.html"> Contact</a></span>
+        <div class="feature">
+          <h3>Open to everyone </h3>
+          <p>Anyone can wrench</p>
         </div>
+        <div class="feature">
+          <h3>Preparing to race</h3>
+          <p>First round in September 2028</p>
+        </div>
+      </div>
+    </section>
 
-        <span class="esetTDM">
-            ECAM Solar Endurance Team - <span id="copyright">Ether</span>
-        </span>
+    <footer class="footer">
+      <p>© ECAM Solar Endurance Team — ESET</p>
     </footer>
+  </main>
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>
