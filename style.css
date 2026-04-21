@@ -11,6 +11,7 @@
   --primary-fg: #0a0a0f;
   --glow: rgba(120, 119, 198, 0.5);
   --glow-2: rgba(215, 8, 8, 0.25);
+  --active-surface: rgba(255, 255, 255, 0.1);
 }
 
 html, body {
@@ -260,10 +261,10 @@ button {
   border-radius: 9999px;
   transition: all 0.2s ease;
 }
-.nav-links a:hover { color: var(--text); background: var(--surface); }
+.nav-links a:hover { color: var(--text); background: var(--active-surface); }
 .nav-links a.active {
   color: var(--text);
-  background: var(--surface);
+  background: var(--active-surface);
   border: 1px solid var(--border);
 }
 
@@ -301,6 +302,5 @@ footer {
   padding: 40px 24px;
   color: var(--muted);
   font-size: 12px;
-  border-top: 1px solid var(--border);
   margin-top: 40px;
 }

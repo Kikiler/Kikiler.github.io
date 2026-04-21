@@ -1,4 +1,4 @@
-/* ============ HERO PHOTO (about page) ============ */
+
 .hero-photo {
   margin: 0 0 56px 0;
   border-radius: 24px;
@@ -21,12 +21,10 @@
   letter-spacing: 0.02em;
 }
 
-/* ============ ABOUT SECTION ============ */
 .about {
   position: relative;
   z-index: 1;
   padding: 120px 24px;
-  border-top: 1px solid var(--border);
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.3));
 }
 
@@ -168,5 +166,7 @@
   color: var(--muted);
 }
 
-/* Tweak hero to feel like a landing, not a full-screen takeover, since there's now content below */
-.container { padding-top: 80px; padding-bottom: 80px; min-height: 90vh; }
+footer {
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
