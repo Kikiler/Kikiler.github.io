@@ -222,7 +222,18 @@ button {
   50% { opacity: 0.4; }
 }
 
+.esc-logo {
+max-height: 100px;
+
+}
+
 /* ============ NAV ============ */
+.nav-container {
+display: flex;
+justify-content: space-between;
+width: 100%;
+max-height: 10%;
+}
 .nav {
   position: relative;
   z-index: 2;
@@ -230,7 +241,6 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 20px 32px;
-  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }

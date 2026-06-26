@@ -2,6 +2,10 @@ function createHeader() {
   const header = document.createElement("header");
   if (document.title.includes("Home")) {
     header.innerHTML = `
+    <div class="nav-container">
+    <a href="/">
+    <img class="esc-logo" src="/ressources/logo.png" alt="logo of the ecam solar endurance team"/>
+    </a>
     <nav class="nav">
       <a href="/" class="nav-brand">ESET <span>/ Student Racing</span></a>
       <ul class="nav-links">
@@ -10,10 +14,17 @@ function createHeader() {
         <li><a href="/sponsors/sponsors.html">Sponsors</a></li>
         <li><a href="/join/join.html">Join</a></li>
       </ul>
-    </nav>`;
+    </nav>
+    </div>
+    `;
   } else if (document.title.includes("About")) {
     header.innerHTML = `
+    <div class="nav-container">
+    <a href="/">
+    <img class="esc-logo" src="/ressources/logo.png" alt="logo of the ecam solar endurance team"/>
+    </a>
     <nav class="nav">
+    
       <a href="/" class="nav-brand">ESET <span>/ Student Racing</span></a>
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
@@ -21,9 +32,14 @@ function createHeader() {
         <li><a href="/sponsors/sponsors.html">Sponsors</a></li>
         <li><a href="/join/join.html">Join</a></li>
       </ul>
-    </nav>`;
+    </nav>
+    </div>`;
   } else if (document.title.includes("Sponsors")) {
     header.innerHTML = `
+    <div class="nav-container">
+    <a href="/">
+    <img class="esc-logo" src="/ressources/logo.png" alt="logo of the ecam solar endurance team"/>
+    </a>
     <nav class="nav">
       <a href="/" class="nav-brand">ESET <span>/ Student Racing</span></a>
       <ul class="nav-links">
@@ -32,9 +48,14 @@ function createHeader() {
         <li><a class="active" href="/sponsors/sponsors.html">Sponsors</a></li>
         <li><a href="/join/join.html">Join</a></li>
       </ul>
-    </nav>`;
+    </nav>
+    </div>`;
   } else if (document.title.includes("Join")) {
     header.innerHTML = `
+    <div class="nav-container">
+    <a href="/">
+    <img class="esc-logo" src="/ressources/logo.png" alt="logo of the ecam solar endurance team"/>
+    </a>
     <nav class="nav">
       <a href="/" class="nav-brand">ESET <span>/ Student Racing</span></a>
       <ul class="nav-links">
@@ -43,9 +64,14 @@ function createHeader() {
         <li><a href="/sponsors/sponsors.html">Sponsors</a></li>
         <li><a class="active" href="/join/join.html">Join</a></li>
       </ul>
-    </nav>`;
+    </nav>
+    </div>`;
   } else {
     header.innerHTML = `
+    <div class="nav-container">
+    <a href="/">
+    <img class="esc-logo" src="/ressources/logo.png" alt="logo of the ecam solar endurance team"/>
+    </a>
     <nav class="nav">
       <a href="/" class="nav-brand">ESET <span>/ Student Racing</span></a>
       <ul class="nav-links">
@@ -54,7 +80,8 @@ function createHeader() {
         <li><a href="/sponsors/sponsors.html">Sponsors</a></li>
         <li><a href="/join/join.html">Join</a></li>
       </ul>
-    </nav>`;
+    </nav>
+    </div>`;
   }
 
   document.body.insertAdjacentElement("afterbegin", header);
