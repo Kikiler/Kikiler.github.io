@@ -1,20 +1,49 @@
-# IESC_Website
-repository aiming to support development of the website of the ecam solar racing team.
+# IESC Website
 
-The goal of this website is to :
-    - give visibility to the partners/sponsors
-    - introduce what we are doing to the public
-    - give information contact for the potential partners/sponsors
-    - telemetry so that people can follow live how we are doing during the contest
-    - overview of the past experiences
+This repository supports the development of the **ECAM Solar Racing Team** website.
 
-We can organize it this way :
-    - About us :
-        talking about what we are doing, the team and the project
-    - partners/sponsors : 
-        presenting our different sponsors and how they help us 
-    - overview of past projects :
-        since it's our first participation this section won't be created
-    - telemetry :
-        will be built in later stages
+---
 
+## 🎯 Objectives of the Website
+
+The website aims to:
+
+- Provide visibility for partners and sponsors  
+- Present the team’s activities to the public  
+- Offer contact information for potential partners  
+- Enable live tracking (telemetry) during competitions  
+- Showcase past team experiences and projects  
+
+---
+
+## 🛠️ Technologies Used
+
+The website is primarily built with:
+
+- HTML  
+- CSS  
+- JavaScript (light usage)
+
+The goal is to keep the stack simple so that beginners can contribute without needing to learn a framework.
+
+👉 If you believe a framework would improve maintainability, please send a detailed email to:  
+**eset@ecam.be**
+
+---
+
+## 📚 Beginner Resources
+
+For contributors who are new to web development, here are some helpful resources:
+
+### YouTube
+- freeCodeCamp.org  
+- SuperSimpleDev  
+
+### HTML / CSS / JavaScript Courses  
+*(available in Dutch but easily translatable)*
+
+- https://rogiervdl.github.io/HTML-course/  
+- https://rogiervdl.github.io/CSS-course/  
+- https://rogiervdl.github.io/JS-course/  
+
+These courses are provided by Rogier van der Linde, lecturer in applied computer science at Odisee (Brussels).
