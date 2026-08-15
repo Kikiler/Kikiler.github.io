@@ -314,3 +314,8 @@ footer {
   font-size: 12px;
   margin-top: 40px;
 }
+
+.footer-div {
+  display: flex;
+  justify-content: space-around;
+}
