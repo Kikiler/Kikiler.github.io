@@ -319,3 +319,11 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
+.instaLogo {
+  max-height: 20px;
+}
+
+.linkedinLogo {
+  max-height: 20px;
+}
