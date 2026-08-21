@@ -1,6 +1,6 @@
 function createHeader() {
   const header = document.createElement("header");
-  if (document.title.includes("Home")) {
+  if (document.title.includes("ECAM Solar Endurance TEAM")) {
     header.innerHTML = `
     <div class="nav-container">
     <a href="/">
