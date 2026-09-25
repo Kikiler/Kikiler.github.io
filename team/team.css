@@ -198,6 +198,12 @@
   border-color: rgba(74, 222, 128, 0.35);
 }
 
+.dept-badge.past {
+  background: rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
 /* ============ INFO AREA ============ */
 .member-info {
   display: flex;
@@ -245,6 +251,13 @@
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
   color: var(--muted);
+}
+
+.tag.past-tag {
+  background: rgba(148, 163, 184, 0.15);
+  color: #cbd5e1;
+  border-color: rgba(148, 163, 184, 0.35);
+  font-weight: 500;
 }
 
 /* ============ TEAM CTA ============ */

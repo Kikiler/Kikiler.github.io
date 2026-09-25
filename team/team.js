@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("active");
 
       memberCards.forEach((card) => {
-        const category = card.getAttribute("data-category");
-        if (filter === "all" || category === filter) {
+        const categories = (card.getAttribute("data-category") || "").split(/\s+/);
+        if (filter === "all" || categories.includes(filter)) {
           card.classList.remove("is-hidden");
           card.style.opacity = "0";
           card.style.transform = "translateY(10px)";
