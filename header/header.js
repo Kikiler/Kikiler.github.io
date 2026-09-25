@@ -3,11 +3,18 @@ function createHeader() {
   const title = document.title;
   const path = window.location.pathname;
 
-  const isAbout = title.includes("About") || path.includes("/about");
-  const isTeam = (title.includes("Team") && !title.includes("ECAM Solar Endurance TEAM")) || path.includes("/team");
-  const isSponsors = title.includes("Sponsors") || path.includes("/sponsors");
-  const isJoin = title.includes("Join") || path.includes("/join");
-  const isHome = (!isAbout && !isTeam && !isSponsors && !isJoin) || path === "/" || path.endsWith("/index.html");
+  let activePage = "home";
+  if (path.includes("/about") || title.startsWith("About")) {
+    activePage = "about";
+  } else if (path.includes("/join") || title.includes("Join")) {
+    activePage = "join";
+  } else if (path.includes("/team") || (title.includes("Team") && !title.includes("Join") && !title.includes("ECAM Solar Endurance TEAM"))) {
+    activePage = "team";
+  } else if (path.includes("/sponsors") || title.includes("Sponsors")) {
+    activePage = "sponsors";
+  } else if (path === "/" || path.endsWith("/index.html") || title.includes("ECAM Solar Endurance TEAM")) {
+    activePage = "home";
+  }
 
   header.innerHTML = `
     <div class="nav-container">
@@ -20,11 +27,11 @@ function createHeader() {
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="site-menu">
-          <li><a class="${isHome ? 'active' : ''}" href="/">Home</a></li>
-          <li><a class="${isAbout ? 'active' : ''}" href="/about/about.html">About</a></li>
-          <li><a class="${isTeam ? 'active' : ''}" href="/team/team.html">Team</a></li>
-          <li><a class="${isSponsors ? 'active' : ''}" href="/sponsors/sponsors.html">Sponsors</a></li>
-          <li><a class="${isJoin ? 'active' : ''}" href="/join/join.html">Join</a></li>
+          <li><a class="${activePage === 'home' ? 'active' : ''}" href="/">Home</a></li>
+          <li><a class="${activePage === 'about' ? 'active' : ''}" href="/about/about.html">About</a></li>
+          <li><a class="${activePage === 'team' ? 'active' : ''}" href="/team/team.html">Team</a></li>
+          <li><a class="${activePage === 'sponsors' ? 'active' : ''}" href="/sponsors/sponsors.html">Sponsors</a></li>
+          <li><a class="${activePage === 'join' ? 'active' : ''}" href="/join/join.html">Join</a></li>
         </ul>
       </nav>
     </div>
