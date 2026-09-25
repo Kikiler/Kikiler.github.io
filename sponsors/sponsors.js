@@ -8,11 +8,11 @@ const sponsors = []; /* to add a sponsor edit the array as follows {
 const tierDetails = {
   gold: {
     label: "Gold Tier",
-    description: "5,000€+ - Title partners. Logo on the hood and roof."
+    description: "Title partners. Logo on the hood and roof."
   },
   silver: {
     label: "Silver Tier",
-    description: "1,000€-5,000€ - Logo on the doors and team apparel."
+    description: "Logo on the doors and team apparel."
   },
   bronze: {
     label: "Bronze Tier",
