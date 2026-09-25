@@ -1,37 +1,33 @@
 /**
- * crew.js — Dynamically counts active crew members from team.html
+ * crew.js — Dynamically counts active crew members from the teamMembers array
  * and injects the total into #crewMemberCount on the About page.
- * A member is considered active if their data-category does NOT
+ * A member is considered active if their category does NOT
  * contain the word "past".
  */
+import { teamMembers } from "./team_data.js";
 (function () {
   const countEl = document.getElementById("crewMemberCount");
   if (!countEl) return; // only runs on pages that have this element
 
-  fetch("/team/team.html")
-    .then((res) => {
-      if (!res.ok) throw new Error("Could not load team.html");
-      return res.text();
-    })
-    .then((html) => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, "text/html");
-
-      const allCards = doc.querySelectorAll(".member-card[data-category]");
-      let activeCount = 0;
-      allCards.forEach((card) => {
-        const categories = (card.getAttribute("data-category") || "")
-          .trim()
-          .split(/\s+/);
-        if (!categories.includes("past")) {
-          activeCount++;
-        }
-      });
-
-      countEl.textContent = activeCount;
-    })
-    .catch(() => {
-      // Fallback: leave the dash in place rather than breaking the page
-      countEl.textContent = "—";
+  // Team members data source (can also be imported if stored in a shared data file)
+  try {
+    let activeCount = 0;
+    
+    teamMembers.forEach((member) => {
+      const categories = (member.category || "")
+        .toLowerCase()
+        .trim()
+        .split(/\s+/);
+      
+      // Count only if "past" is not in the category string
+      if (!categories.includes("past")) {
+        activeCount++;
+      }
     });
+
+    countEl.textContent = activeCount;
+  } catch (err) {
+    // Fallback: leave the dash in place rather than breaking the page
+    countEl.textContent = "—";
+  }
 })();
