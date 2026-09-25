@@ -261,7 +261,7 @@ max-height: 100px;
 display: flex;
 justify-content: space-between;
 width: 100%;
-max-height: 10%;
+max-height: 110px;
 }
 .nav {
   position: relative;
@@ -288,11 +288,32 @@ max-height: 10%;
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  gap: 4px;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: calc(100% - 8px);
+  right: 32px;
+  min-width: 180px;
+  padding: 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: rgba(35, 112, 120, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 32px rgba(26, 93, 101, 0.28);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+.nav-links.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .nav-links a {
+  display: block;
   color: var(--muted);
   text-decoration: none;
   font-size: 13px;
@@ -305,6 +326,44 @@ max-height: 10%;
   color: var(--text);
   background: var(--active-surface);
   border: 1px solid var(--border);
+}
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-left: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  border-color: var(--border-strong);
+  background: var(--active-surface);
+}
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .cta-card {
