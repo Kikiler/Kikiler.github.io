@@ -69,7 +69,8 @@ body::after {
   padding: 24px;
 }
 
-.badge {
+.badge,
+.eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -83,6 +84,9 @@ body::after {
   letter-spacing: 0.2em;
   color: var(--muted);
   margin-bottom: 24px;
+}
+
+.badge {
   opacity: 0;
   transform: translateY(-8px);
   animation: fadeIn 0.7s ease forwards;
@@ -94,6 +98,7 @@ body::after {
   border-radius: 9999px;
   background: var(--primary);
   animation: pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
 h1 {

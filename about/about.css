@@ -34,12 +34,14 @@
 }
 
 .eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--muted);
-  padding: 6px 12px;
+  padding: 6px 14px;
   border: 1px solid var(--border);
   border-radius: 9999px;
   background: var(--surface);
