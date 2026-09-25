@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team — ESET</title>
+  <meta name="description"
+    content="Meet the founders, co-founders, and specialized engineering sub-teams of the ECAM Solar Endurance Team (ESET)." />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="team.css" />
+</head>
+
+<body>
+  <main>
+    <section class="team-section">
+      <div class="team-inner">
+        <span class="eyebrow">The Crew — Season 01</span>
+        <h2>Meet the founders & engineering leads behind ESET.</h2>
+        <p class="lead-narrow">
+          From a sketch in a school garage to the international starting grid. Meet the founders, co-founders,
+          and multidisciplinary leads designing, welding, and wiring our solar endurance race car.
+        </p>
+
+        <!-- Department Filter Tabs -->
+        <div class="team-filters" role="tablist" aria-label="Filter crew by team">
+          <button class="filter-btn active" data-filter="all" type="button">All Members</button>
+          <button class="filter-btn" data-filter="leadership" type="button">Leadership</button>
+          <button class="filter-btn" data-filter="chassis" type="button">Chassis & Mechanical</button>
+          <button class="filter-btn" data-filter="powertrain" type="button">Powertrain & Electrical</button>
+          <button class="filter-btn" data-filter="aero" type="button">Aerodynamics</button>
+          <button class="filter-btn" data-filter="solar" type="button">Solar & Energy</button>
+          <button class="filter-btn" data-filter="operations" type="button">Operations & Media</button>
+          <button class="filter-btn" data-filter="advisory" type="button">Faculty Advisory</button>
+        </div>
+
+        <!-- Team Members Grid -->
+        <div class="team-grid" id="teamGrid">
+
+          <!-- Thibaut Dochen -->
+          <article class="member-card" data-category="leadership">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                alt="Thibaut Dochen" loading="lazy" class="member-img" data-initials="TD" />
+              <span class="dept-badge leadership">Leadership</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Thibaut Dochen</h3>
+              <p class="member-role">Founder & Team Principal</p>
+              <p class="member-bio">
+                Spearheaded the creation of ESET after identifying the lack of student automotive projects. Directs team
+                strategy, administration relations, race calendar planning, and cross-team execution.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Team Direction</span>
+                <span class="tag">Strategy</span>
+                <span class="tag">Operations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mathieu Noblesse -->
+          <article class="member-card" data-category="chassis">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+                alt="Mathieu Noblesse" loading="lazy" class="member-img" data-initials="MN" />
+              <span class="dept-badge chassis">Chassis & Mechanical</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Mathieu Noblesse</h3>
+              <p class="member-role">Co-Founder & Chassis Lead</p>
+              <p class="member-bio">
+                Heads tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit
+                ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Spaceframe</span>
+                <span class="tag">Suspension</span>
+                <span class="tag">TIG Welding</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Guillaume Warichet -->
+          <article class="member-card" data-category="powertrain">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                alt="Guillaume Warichet" loading="lazy" class="member-img" data-initials="GW" />
+              <span class="dept-badge powertrain">Powertrain & Electrical</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Guillaume Warichet</h3>
+              <p class="member-role">Co-Founder & Powertrain Lead</p>
+              <p class="member-bio">
+                Architect of the high-voltage drivetrain, custom battery pack modules, Battery Management System (BMS),
+                inverter tuning, and the low-voltage vehicle harness loom.
+              </p>
+              <div class="member-tags">
+                <span class="tag">High-Voltage Battery</span>
+                <span class="tag">BMS</span>
+                <span class="tag">Telemetry</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Julie Balfroid -->
+          <article class="member-card" data-category="aero">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                alt="Julie Balfroid" loading="lazy" class="member-img" data-initials="JB" />
+              <span class="dept-badge aero">Aerodynamics</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Julie Balfroid</h3>
+              <p class="member-role">Co-Founder & Aerodynamics Lead</p>
+              <p class="member-bio">
+                Conducts computational fluid dynamics (CFD) drag modeling, surface curvature refinement, and composite
+                shell mold fabrication to maximize aerodynamic endurance on track.
+              </p>
+              <div class="member-tags">
+                <span class="tag">CFD Simulation</span>
+                <span class="tag">Carbon Fiber</span>
+                <span class="tag">Drag Reduction</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Oscar Vuylsteke -->
+          <article class="member-card" data-category="solar">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80"
+                alt="Oscar Vuylsteke" loading="lazy" class="member-img" data-initials="OV" />
+              <span class="dept-badge solar">Solar & Energy</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Oscar Vuylsteke</h3>
+              <p class="member-role">Co-Founder & Solar Array Lead</p>
+              <p class="member-bio">
+                Engineers the rooftop photovoltaic array layout, Maximum Power Point Tracking (MPPT) converters, and
+                energy budget prediction models to harvest peak wattage across changing race conditions.
+              </p>
+              <div class="member-tags">
+                <span class="tag">PV Arrays</span>
+                <span class="tag">MPPT Converters</span>
+                <span class="tag">Energy Budgeting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Diandra Lahaeye -->
+          <article class="member-card" data-category="operations">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
+                alt="Diandra Lahaeye" loading="lazy" class="member-img" data-initials="DL" />
+              <span class="dept-badge operations">Operations & Media</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Diandra Lahaeye</h3>
+              <p class="member-role">Co-Founder & Operations Lead</p>
+              <p class="member-bio">
+                Manages corporate sponsor acquisition, industry partnerships, external media presence, and paddock
+                logistics to ensure the crew has every tool, part, and connection required to compete.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Sponsorship</span>
+                <span class="tag">Logistics</span>
+                <span class="tag">Communications</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Philippe Melotte -->
+          <article class="member-card" data-category="advisory">
+            <div class="member-image-wrap">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80"
+                alt="Philippe Melotte" loading="lazy" class="member-img" data-initials="PM" />
+              <span class="dept-badge advisory">Faculty Advisory</span>
+            </div>
+            <div class="member-info">
+              <h3 class="member-name">Philippe Melotte</h3>
+              <p class="member-role">Faculty Advisor & Mentor</p>
+              <p class="member-bio">
+                Professor at ECAM Brussels providing technical supervision, safety regulations compliance, academic
+                sponsorship, and vital liaison with university laboratories and tooling facilities.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Academic Oversight</span>
+                <span class="tag">Safety Compliance</span>
+                <span class="tag">Engineering Mentorship</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Join Callout -->
+        <div class="cta-card team-cta">
+          <h3>Want to become part of the crew?</h3>
+          <p>
+            Whether you want to calculate aerodynamics, assemble high-voltage batteries, or manage sponsor relations,
+            there is a place for you on the team.
+          </p>
+          <a href="mailto:eset@ecam.be?subject=Prospective Partner - Student &body=Dont change the Subject/ne changez pas l'objet" class="btn-primary">
+            Join the Team <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="team.js"></script>
+  <script src="/footer/footer.js"></script>
+  <script src="/header/header.js"></script>
+</body>
+
+</html>
