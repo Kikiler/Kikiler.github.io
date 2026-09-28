@@ -52,12 +52,12 @@ export const teamMembers = [
   },
   {
     name: "Diandra Lahaeye",
-    role: "Co-Founder & Operations Lead",
+    role: "Co-Founder & Trésorière",
     category: "operations",
     badgeText: "Operations & Media",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
     initials: "DL",
-    bio: "Manages corporate sponsor acquisition, industry partnerships, external media presence, and paddock logistics to ensure the crew has every tool, part, and connection required to compete.",
+    bio: "Gère les finances de l'équipe",
     tags: ["Sponsorship", "Logistics", "Communications"]
   },
   {
@@ -90,5 +90,40 @@ export const teamMembers = [
     initials: "KE",
     bio: "Responsible for the management of all the acquired data from the cars to the humans.",
     tags: ["Data"]
+  },
+  {
+    name: "Diego Demoitié",
+    role: "Chassis Team",
+    category: "chassis",
+    badgeText: "Chassis & Mechanical",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+    initials: "DD",
+    bio: "tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.",
+    tags: ["Chassis"]
+  },
+
+  {
+    name: "Loïc Van Dooren",
+    role: "Polyvalent consultant",
+    category: "chassis",
+    badgeText: "Chassis & Mechanical",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+    initials: "LVD",
+    bio: "tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.",
+    tags: ["Chassis"]
+  },
+  {
+    name: "Antoine Dumont",
+    role: "Polyvalent consultant",
+    category: "chassis",
+    badgeText: "Chassis & Mechanical",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+    initials: "AD",
+    bio: "tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.",
+    tags: ["Chassis"]
   }
+
+
+
+
 ];
