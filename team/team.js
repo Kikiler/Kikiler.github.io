@@ -31,9 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // On prend le premier mot de la catégorie pour la classe CSS du badge
       const mainCategoryClass = member.category.split(" ")[0];
 
+      const imageHTML = member.image
+        ? `<img src="${member.image}" alt="${member.name}" loading="lazy" class="member-img" data-initials="${member.initials}" />`
+        : `<div class="avatar-fallback">${member.initials}</div>`;
+
       article.innerHTML = `
         <div class="member-image-wrap">
-          <img src="${member.image}" alt="${member.name}" loading="lazy" class="member-img" data-initials="${member.initials}" />
+          ${imageHTML}
           <span class="dept-badge ${mainCategoryClass}">${member.badgeText}</span>
         </div>
         <div class="member-info">
@@ -45,6 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
       `;
+
+      const img = article.querySelector(".member-img");
+      if (img) {
+        img.addEventListener("error", () => {
+          const fallback = document.createElement("div");
+          fallback.className = "avatar-fallback";
+          fallback.textContent = member.initials;
+          img.replaceWith(fallback);
+        });
+      }
 
       teamGrid.appendChild(article);
     });

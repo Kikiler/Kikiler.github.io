@@ -7,48 +7,48 @@ export const teamMembers = [
     badgeText: "Leadership",
     image: "",
     initials: "TD",
-    bio: "Spearheaded the creation of ESET after identifying the lack of student automotive projects. Directs team strategy, administration relations, race calendar planning, and cross-team execution.",
-    tags: ["Team Direction", "Strategy", "Operations"]
+    bio: "Directs team strategy, administration relations, race calendar planning, and cross-team execution.",
+    tags: [""]
   },
   {
     name: "Mathieu Noblesse",
-    role: "Co-Founder & Chassis Lead",
+    role: "Co-Founder & Mechanical Lead",
     category: "chassis",
     badgeText: "Chassis & Mechanical",
     image: "",
     initials: "MN",
     bio: "Heads tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.",
-    tags: ["Spaceframe", "Suspension", "TIG Welding"]
+    tags: ["Aerodynamics"]
   },
   {
     name: "Guillaume Warichet",
-    role: "Co-Founder & Powertrain Lead",
-    category: "powertrain",
+    role: "Co-Founder & Aerodynamics Lead ",
+    category: "Mechanical",
     badgeText: "Powertrain & Electrical",
     image: "",
     initials: "GW",
-    bio: "Architect of the high-voltage drivetrain, custom battery pack modules, Battery Management System (BMS), inverter tuning, and the low-voltage vehicle harness loom.",
-    tags: ["High-Voltage Battery", "BMS", "Telemetry"]
+    bio: "",
+    tags: ["Mechanical"]
   },
   {
     name: "Julie Balfroid",
-    role: "Co-Founder & Aerodynamics Lead",
-    category: "aero",
+    role: "Co-Founder",
+    category: "Chassis",
     badgeText: "Aerodynamics",
     image: "",
     initials: "JB",
     bio: "Conducts computational fluid dynamics (CFD) drag modeling, surface curvature refinement, and composite shell mold fabrication to maximize aerodynamic endurance on track.",
-    tags: ["CFD Simulation", "Carbon Fiber", "Drag Reduction"]
+    tags: ["Recruiting, Chassis"]
   },
   {
     name: "Oscar Vuylsteke",
-    role: "Co-Founder & Solar Array Lead",
+    role: "Co-Founder & Power Lead",
     category: "solar",
-    badgeText: "Solar & Energy",
-    image: "",
+    badgeText: "Power & Energy",
+    image: "/ressources/oscarVuylsteke.png",
     initials: "OV",
-    bio: "Engineers the rooftop photovoltaic array layout, Maximum Power Point Tracking (MPPT) converters, and energy budget prediction models to harvest peak wattage across changing race conditions.",
-    tags: ["PV Arrays", "MPPT Converters", "Energy Budgeting"]
+    bio: "Coordinates the powertrain design team",
+    tags: ["Powertrain"]
   },
   {
     name: "Diandra Lahaeye",
@@ -98,7 +98,7 @@ export const teamMembers = [
     badgeText: "Chassis & Mechanical",
     image: "",
     initials: "LVD",
-    bio: "tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.",
+    bio: "giving helping hand here and there",
     tags: ["Chassis"]
   },
   {
@@ -108,9 +108,40 @@ export const teamMembers = [
     badgeText: "Chassis & Mechanical",
     image: "",
     initials: "AD",
-    bio: "tubular spaceframe engineering, suspension kinematics, braking circuits, and pilot cockpit ergonomics. Oversees workshop welding, CNC machining, and structural torsion testing.",
+    bio: "giving helping hand here and there",
     tags: ["Chassis"]
+  },
+  {
+    name: "Chamsedine Bekkouri",
+    role: "Sponsors Lead",
+    category: "sponsor",
+    badgeText: "Sponsor",
+    image: "",
+    initials: "CB",
+    bio: "Responsible for partner prospecting",
+    tags: ["Sponsor"]
+  },
+  {
+    name: "Charles Loïc Noah",
+    role: "Telecom engineer",
+    category: "Telecomunications",
+    badgeText: "Data",
+    image: "",
+    initials: "CLN",
+    bio: "Responsible for the management of all the acquired data from the cars to the humans.",
+    tags: ["Data"]
+  },
+  {
+    name: "Eliot Jones",
+    role: "Data engineer",
+    category: "Data",
+    badgeText: "Data",
+    image: "",
+    initials: "EJ",
+    bio: "Responsible for the management of all the acquired data from the cars to the humans.",
+    tags: ["Data"]
   }
+
 
 
 
