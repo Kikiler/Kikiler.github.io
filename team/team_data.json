@@ -22,8 +22,8 @@
   {
     "name": "Guillaume Warichet",
     "role": "Co-Founder & Aerodynamics Lead ",
-    "category": "Mechanical",
-    "badgeText": "Powertrain & Electrical",
+    "category": "aero",
+    "badgeText": "Aerodynamics",
     "image": "",
     "initials": "GW",
     "bio": "",
@@ -33,7 +33,7 @@
     "name": "Julie Balfroid",
     "role": "Co-Founder",
     "category": "Chassis",
-    "badgeText": "Aerodynamics",
+    "badgeText": "Chassis & Mechanical",
     "image": "",
     "initials": "JB",
     "bio": "",
@@ -42,8 +42,8 @@
   {
     "name": "Oscar Vuylsteke",
     "role": "Co-Founder & Power Lead",
-    "category": "solar",
-    "badgeText": "Power & Energy",
+    "category": "powertrain",
+    "badgeText": "Powertrain",
     "image": "/ressources/oscarVuylsteke.png",
     "initials": "OV",
     "bio": "Coordinates the powertrain design team",
@@ -77,7 +77,7 @@
     "image": "",
     "initials": "KE",
     "bio": "Responsible for the management of all the acquired data from the cars to the humans.",
-    "tags": ["Data"]
+    "tags": ["Data processing"]
   },
   {
     "name": "Diego Demoitié",
@@ -122,21 +122,31 @@
   {
     "name": "Charles Loïc Noah",
     "role": "Telecom engineer",
-    "category": "Telecomunications",
+    "category": "data",
     "badgeText": "Data",
     "image": "",
     "initials": "CLN",
     "bio": "Responsible for the management of all the acquired data from the cars to the humans.",
-    "tags": ["Data"]
+    "tags": ["Telecommunication", "signal processing"]
   },
   {
     "name": "Eliot Jones",
     "role": "Data engineer",
-    "category": "Data",
+    "category": "data",
     "badgeText": "Data",
     "image": "",
     "initials": "EJ",
     "bio": "Responsible for the management of all the acquired data from the cars to the humans.",
-    "tags": ["Data"]
+    "tags": ["Data processing"]
+  },
+  {
+    "name": "Noura Yassini El Bahoudi",
+    "role": "Telecom engineer",
+    "category": "data",
+    "badgeText": "Data",
+    "image": "",
+    "initials": "NYEB",
+    "bio": "Responsible for the management of all the acquired data from the cars to the humans.",
+    "tags": ["Telecommunication", "signal processing"]
   }
 ]
