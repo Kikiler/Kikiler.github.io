@@ -257,12 +257,18 @@ button {
 }
 
 .esc-logo {
-  max-height: 120px;
+  max-height: 155px;
   height: auto;
   transition: transform 0.2s ease;
 }
 .esc-logo:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .esc-logo {
+    max-height: 115px;
+  }
 }
 
 /* ============ NAV ============ */
@@ -271,7 +277,7 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-height: 125px;
+  max-height: 160px;
 }
 .nav {
   position: relative;

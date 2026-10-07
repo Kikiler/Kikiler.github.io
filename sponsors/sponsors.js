@@ -1,8 +1,15 @@
-const sponsors = []; /* to add a sponsor edit the array as follows {
+const sponsors = [{
+    name: "AIECAM",
+    photoPath: "/ressources/aiecam.png",
+    sector: "Automotive",
+    tier: "silver",
+    url: "https://www.aiecam.be"
+  }]; /* to add a sponsor edit the array as follows {
     name: "Company Name",
     photoPath: "/ressources/company-logo.png",
     sector: "Automotive",
-    tier: "gold"
+    tier: "gold",
+    url: "https://example.com"
   }*/
 
 const tierDetails = {
@@ -21,8 +28,16 @@ const tierDetails = {
 };
 
 function createSponsorCard(sponsor, tier) {
-  const card = document.createElement("article");
+  const isLink = Boolean(sponsor.url && sponsor.url.trim());
+  const card = document.createElement(isLink ? "a" : "article");
   card.className = "sponsor-card";
+
+  if (isLink) {
+    card.href = sponsor.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+    card.setAttribute("aria-label", `${sponsor.name} — visit website`);
+  }
 
   const logo = document.createElement("div");
   logo.className = "sponsor-logo";

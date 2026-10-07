@@ -109,7 +109,7 @@
 .member-image-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: rgba(16, 26, 56, 0.8);
 }
@@ -132,7 +132,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #ffffff;
