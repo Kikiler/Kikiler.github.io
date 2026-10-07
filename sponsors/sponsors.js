@@ -1,17 +1,3 @@
-const sponsors = [{
-    name: "AIECAM",
-    photoPath: "/ressources/aiecam.png",
-    sector: "Automotive",
-    tier: "silver",
-    url: "https://www.aiecam.be"
-  }]; /* to add a sponsor edit the array as follows {
-    name: "Company Name",
-    photoPath: "/ressources/company-logo.png",
-    sector: "Automotive",
-    tier: "gold",
-    url: "https://example.com"
-  }*/
-
 const tierDetails = {
   gold: {
     label: "Gold Tier",
@@ -63,7 +49,7 @@ function createSponsorCard(sponsor, tier) {
   return card;
 }
 
-function createTier(tier) {
+function createTier(tier, sponsors = []) {
   const details = tierDetails[tier];
   const section = document.createElement("section");
   section.className = `tier tier-${tier}`;
@@ -97,7 +83,41 @@ function createTier(tier) {
   return section;
 }
 
-const sponsorTiers = document.getElementById("sponsor-tiers");
-["gold", "silver", "bronze"].forEach((tier) => {
-  sponsorTiers.appendChild(createTier(tier));
-});
+async function loadSponsors() {
+  try {
+    const response = await fetch("sponsor_data.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (err) {
+    const response = await fetch("/sponsors/sponsor_data.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  }
+}
+
+async function renderSponsors() {
+  const sponsorTiers = document.getElementById("sponsor-tiers");
+  if (!sponsorTiers) return;
+
+  let sponsors = [];
+  try {
+    sponsors = await loadSponsors();
+  } catch (error) {
+    console.error("Failed to load sponsor data from sponsor_data.json:", error);
+  }
+
+  sponsorTiers.innerHTML = "";
+  ["gold", "silver", "bronze"].forEach((tier) => {
+    sponsorTiers.appendChild(createTier(tier, sponsors));
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", renderSponsors);
+} else {
+  renderSponsors();
+}
