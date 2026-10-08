@@ -74,7 +74,7 @@
     "role": "Data Lead",
     "category": "Data transmission & processing",
     "badgeText": "Data",
-    "image": "",
+    "image": "/ressources/KillianEvouna.heic",
     "initials": "KE",
     "bio": "Responsible for the management of all the acquired data from the cars to the humans.",
     "tags": ["Data processing"]
@@ -111,12 +111,12 @@
   },
   {
     "name": "Chamsedine Bekkouri",
-    "role": "Sponsors Lead",
+    "role": "Partnerships & Sponsorship Lead",
     "category": "sponsor",
     "badgeText": "Sponsor",
-    "image": "",
+    "image": "/ressources/ChamsedineBekkouri.jpeg",
     "initials": "CB",
-    "bio": "Responsible for partner prospecting",
+    "bio": "Development of partnerships and sponsorships with companies to support the project financially, technically, and materially",
     "tags": ["Sponsor"]
   },
   {
